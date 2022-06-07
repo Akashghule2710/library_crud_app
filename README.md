@@ -43,12 +43,13 @@ for admin panal
                 #delete : in retrive page there is button to perform delete 
                           if you delete the data will gone from book details table as well as database table   http://127.0.0.1:8000/showtable/
  # student view:
-                     when a student visit this app there is a book list menu bar on index page by click on that student can see all book record
-                     http://127.0.0.1:8000/booklist/
+                 when a student visit this app there is a book list menu bar on index page
+                 by click on that student can see all book record
+                 http://127.0.0.1:8000/booklist/
                      
 #rest api :
                      I have created the api using django rest framework here you can see  http://127.0.0.1:8000/get_book_details/
- #############################################Documentation Ends########################################################
+##End##
                      
                     
                
