@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .button-wrap {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            text-align: center;
+          }
+          .button {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            margin: 50px;
+          }
+    </style>
+    <link rel="stylesheet" href="{% static '/css1/style.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+</head>
+<body>
+    <div style="text-align:right">
+        <nav>
+            <ul>
+                <li style="border:rgb(0, 255, 128) solid"><a href="{% url 'booklist' %}">&nbsp; Book List &nbsp; </a></li>
+                <li style="border:rgb(0, 255, 128) solid"><a href="{% url 'loginpage' %}">&nbsp; Login &nbsp; </a></li>
+    
+    
+            </ul>
+    
+    
+    
+        </nav>
+    </div>
+    <div>
+        <h1 style="font-size: 120px ; color:deeppink ; text-align:center;padding: top 70px; margin: top 250px;">Library Management System</h1>
+    </div>
+    
+
+
+</body>
+</html>

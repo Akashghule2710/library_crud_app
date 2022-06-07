@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>update form</title>
+</head>
+<body style="background-color: rgb(32, 233, 49)">
+    <center>
+        <h1 style="font: size 150px;color:crimson">Update Form</h1>
+        {% if key2 %}
+        <form action="{% url 'update' pk=key2.id %}" method="post">
+            {%csrf_token%}
+            <table>
+                <tr>
+                    <td>bno</td>
+                    <td><input type="text" name="bno" id="" value="{{key2.bno}}"></td>
+                </tr>
+                <tr>
+                    <td>name</td>
+                    <td><input type="text" name="name" id="" value="{{key2.name}}"></td>
+                </tr>
+                <tr>
+                    <td>auther</td>
+                    <td><input type="text" name="auther" id="" value="{{key2.auther}}"></td>
+                </tr>
+                <tr>
+                    <td>status</td>
+                    <td><input type="text" name="status" id="" value="{{key2.status}}"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="update"></td>
+                </tr>
+            </table>
+        </form>
+        {% endif%}
+       
+    </center>
+    
+</body>
+</html>

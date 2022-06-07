@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static '/css1/style.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insert form</title>
+</head>
+<body>
+    <center>
+        <h1 style="font: size 150px;color:crimson">Insert Data Form</h1>
+        <form action="{% url 'insert' %}"  method="post">
+            {% csrf_token %}
+            <table>
+                <tr>
+                    <td style="font: size 50px;color:rgb(20, 220, 110)">bno</td>
+                    <td><input type="text" name="bno" id=""></td>
+                </tr>
+                <tr>
+                    <td style="font: size 50px;color:rgb(20, 220, 110)">name</td>
+                    <td><input type="text" name="name" id=""></td>
+                </tr>
+                <tr>
+                    <td style="font: size 50px;color:rgb(20, 220, 110)">auther</td>
+                    <td><input type="text" name="auther" id=""></td>
+                </tr>
+                <tr>
+                    <td style="font: size 50px;color:rgb(20, 220, 110)">status</td>
+                    <td><input type="text" name="status" id=""></td>
+                </tr>
+                <tr>
+                    <td style="font: size 100px;color:crimson ; text-align:center" ><input type="submit" value="insert"></td>
+                </tr>
+            </table>
+        </form>
+       
+    </center>
+    
+</body>
+</html>
